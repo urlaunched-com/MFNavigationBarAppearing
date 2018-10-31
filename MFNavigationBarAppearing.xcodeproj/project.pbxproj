@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		504D9D8D2189B643003BFC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9D8C2189B643003BFC4C /* AppDelegate.swift */; };
-		504D9D8F2189B643003BFC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9D8E2189B643003BFC4C /* ViewController.swift */; };
-		504D9D922189B643003BFC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504D9D902189B643003BFC4C /* Main.storyboard */; };
 		504D9D942189B646003BFC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504D9D932189B646003BFC4C /* Assets.xcassets */; };
 		504D9D972189B646003BFC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504D9D952189B646003BFC4C /* LaunchScreen.storyboard */; };
+		504D9DA02189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */; };
+		504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */; };
+		504D9DA42189B709003BFC4C /* MFAppearingNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */; };
+		504D9DA82189F458003BFC4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA62189F458003BFC4C /* MainViewController.swift */; };
+		504D9DA92189F458003BFC4C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504D9DA72189F458003BFC4C /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		504D9D892189B643003BFC4C /* MFNavigationBarAppearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFNavigationBarAppearing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504D9D8C2189B643003BFC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		504D9D8E2189B643003BFC4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		504D9D912189B643003BFC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		504D9D932189B646003BFC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504D9D962189B646003BFC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504D9D982189B646003BFC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNavigationBarAppearingContoller.swift; sourceTree = "<group>"; };
+		504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNavigationBarAppearing.swift; sourceTree = "<group>"; };
+		504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAppearingNavigationBar.swift; sourceTree = "<group>"; };
+		504D9DA62189F458003BFC4C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		504D9DA72189F458003BFC4C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		504D9D8B2189B643003BFC4C /* MFNavigationBarAppearing */ = {
 			isa = PBXGroup;
 			children = (
+				504D9DA52189F447003BFC4C /* Example */,
+				504D9D9E2189B66D003BFC4C /* Code */,
 				504D9D8C2189B643003BFC4C /* AppDelegate.swift */,
-				504D9D8E2189B643003BFC4C /* ViewController.swift */,
-				504D9D902189B643003BFC4C /* Main.storyboard */,
 				504D9D932189B646003BFC4C /* Assets.xcassets */,
 				504D9D952189B646003BFC4C /* LaunchScreen.storyboard */,
 				504D9D982189B646003BFC4C /* Info.plist */,
 			);
 			path = MFNavigationBarAppearing;
+			sourceTree = "<group>";
+		};
+		504D9D9E2189B66D003BFC4C /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */,
+				504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */,
+				504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		504D9DA52189F447003BFC4C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				504D9DA62189F458003BFC4C /* MainViewController.swift */,
+				504D9DA72189F458003BFC4C /* MainViewController.xib */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				504D9D972189B646003BFC4C /* LaunchScreen.storyboard in Resources */,
+				504D9DA92189F458003BFC4C /* MainViewController.xib in Resources */,
 				504D9D942189B646003BFC4C /* Assets.xcassets in Resources */,
-				504D9D922189B643003BFC4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504D9D8F2189B643003BFC4C /* ViewController.swift in Sources */,
+				504D9DA42189B709003BFC4C /* MFAppearingNavigationBar.swift in Sources */,
+				504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearing.swift in Sources */,
+				504D9DA82189F458003BFC4C /* MainViewController.swift in Sources */,
+				504D9DA02189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift in Sources */,
 				504D9D8D2189B643003BFC4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		504D9D902189B643003BFC4C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				504D9D912189B643003BFC4C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		504D9D952189B646003BFC4C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XK5AEQZHJU;
 				INFOPLIST_FILE = MFNavigationBarAppearing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.molfar.MFNavigationBarAppearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XK5AEQZHJU;
 				INFOPLIST_FILE = MFNavigationBarAppearing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.molfar.MFNavigationBarAppearing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
