@@ -29,12 +29,12 @@ open class MFNavigationBarAppearingContoller: UINavigationController {
         navigationBar.barTintColor = navigationBar.barTintColor ?? viewColor
     }
     
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+    override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
         appearingNavigationBar?.appearer = viewController as? MFNavigationBarAppearer
         super.pushViewController(viewController, animated: animated)
     }
     
-    override func popViewController(animated: Bool) -> UIViewController? {
+    override open func popViewController(animated: Bool) -> UIViewController? {
         let popedViewController = super.popViewController(animated: animated)
         appearingNavigationBar?.appearer = popedViewController as? MFNavigationBarAppearer
         return popedViewController
