@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
         
         navigationController?.navigationBar.barTintColor = .purple
         navigationController?.navigationBar.tintColor = .white
+//        (navigationController as? MFNavigationBarAppearingContoller)?.appearingNavigationBar?.titleAppearingAnimated = true
     }
 }
 
