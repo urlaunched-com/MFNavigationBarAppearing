@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.barTintColor = .purple
+        (navigationController as? MFNavigationBarAppearingContoller)?.appearingNavigationBar?.navigationBarColor = .purple
         navigationController?.navigationBar.tintColor = .white
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.cancel, target: nil, action: nil)

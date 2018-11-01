@@ -17,6 +17,11 @@ open class MFAppearingNavigationBar: UINavigationBar {
     
     open private(set) var titleLabel: UILabel?
     open private(set) var appearingState: AppearingState = .disappeared
+    open var navigationBarColor: UIColor? {
+        didSet {
+            setNeedsLayout()
+        }
+    }
     
     open var titleAppearingInteractive = true
     open var titleAppearingAnimated = false {
@@ -30,15 +35,7 @@ open class MFAppearingNavigationBar: UINavigationBar {
     
     private var barBackgroundView: UIView?
     private var observation: NSKeyValueObservation?
-    
-    override open var barTintColor: UIColor? {
-        didSet {
-            if topItem?.titleView != nil {
-                setNeedsLayout()
-            }
-        }
-    }
-    
+        
     override open func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
@@ -61,7 +58,7 @@ private extension MFAppearingNavigationBar {
     
     func setupUI() {
         barBackgroundView = subviews.first
-        barBackgroundView?.backgroundColor = barTintColor ?? .black
+        barBackgroundView?.backgroundColor = navigationBarColor ?? .black
         
         if let barBackgroundView = barBackgroundView {
             let backgroundView = barBackgroundView.viewWithTag(1) ?? {
@@ -73,7 +70,7 @@ private extension MFAppearingNavigationBar {
             
             barBackgroundView.bringSubviewToFront(backgroundView)
             backgroundView.frame = barBackgroundView.bounds
-            backgroundView.backgroundColor = barTintColor ?? .black
+            backgroundView.backgroundColor = barBackgroundView.backgroundColor
             barBackgroundView.backgroundColor = .clear
         }
         

@@ -26,7 +26,9 @@ open class MFNavigationBarAppearingContoller: UINavigationController {
         viewControllers = [rootViewController]
         
         let viewColor = rootViewController.view.backgroundColor
-        navigationBar.barTintColor = navigationBar.barTintColor ?? viewColor
+        if appearingNavigationBar?.navigationBarColor == nil {
+           appearingNavigationBar?.navigationBarColor = viewColor
+        }
     }
     
     override open func pushViewController(_ viewController: UIViewController, animated: Bool) {
