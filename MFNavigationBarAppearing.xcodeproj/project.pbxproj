@@ -11,7 +11,7 @@
 		504D9D942189B646003BFC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504D9D932189B646003BFC4C /* Assets.xcassets */; };
 		504D9D972189B646003BFC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504D9D952189B646003BFC4C /* LaunchScreen.storyboard */; };
 		504D9DA02189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */; };
-		504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */; };
+		504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearer.swift */; };
 		504D9DA42189B709003BFC4C /* MFAppearingNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */; };
 		504D9DA82189F458003BFC4C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D9DA62189F458003BFC4C /* MainViewController.swift */; };
 		504D9DA92189F458003BFC4C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504D9DA72189F458003BFC4C /* MainViewController.xib */; };
@@ -24,7 +24,7 @@
 		504D9D962189B646003BFC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504D9D982189B646003BFC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNavigationBarAppearingContoller.swift; sourceTree = "<group>"; };
-		504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNavigationBarAppearing.swift; sourceTree = "<group>"; };
+		504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNavigationBarAppearer.swift; sourceTree = "<group>"; };
 		504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFAppearingNavigationBar.swift; sourceTree = "<group>"; };
 		504D9DA62189F458003BFC4C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		504D9DA72189F458003BFC4C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				504D9D9F2189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift */,
-				504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearing.swift */,
+				504D9DA12189B6D3003BFC4C /* MFNavigationBarAppearer.swift */,
 				504D9DA32189B709003BFC4C /* MFAppearingNavigationBar.swift */,
 			);
 			path = Code;
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				504D9DA42189B709003BFC4C /* MFAppearingNavigationBar.swift in Sources */,
-				504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearing.swift in Sources */,
+				504D9DA22189B6D3003BFC4C /* MFNavigationBarAppearer.swift in Sources */,
 				504D9DA82189F458003BFC4C /* MainViewController.swift in Sources */,
 				504D9DA02189B6AB003BFC4C /* MFNavigationBarAppearingContoller.swift in Sources */,
 				504D9D8D2189B643003BFC4C /* AppDelegate.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 
 open class MFAppearingNavigationBar: UINavigationBar {
-
+    
     public enum AppearingState {
         case appeared, disappeared, appearing
     }
@@ -29,10 +29,9 @@ open class MFAppearingNavigationBar: UINavigationBar {
     open weak var appearer: MFNavigationBarAppearer?
     
     private var barBackgroundView: UIView?
-    private var customTitleContainer: UIView?
     private var observation: NSKeyValueObservation?
     
-    override var barTintColor: UIColor? {
+    override open var barTintColor: UIColor? {
         didSet {
             if topItem?.titleView != nil {
                 setNeedsLayout()
@@ -40,11 +39,11 @@ open class MFAppearingNavigationBar: UINavigationBar {
         }
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
         
-        if topItem?.titleView != customTitleContainer || topItem?.titleView == nil {
+        if topItem?.titleView == nil {
             setupTitleContainer()
         }
         
@@ -83,23 +82,15 @@ private extension MFAppearingNavigationBar {
     }
     
     func setupTitleContainer() {
-        if titleLabel == nil, let titleText = appearer?.appearingTitle {
-            customTitleContainer = UIView(frame: CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.height)))
-            customTitleContainer?.backgroundColor = .clear
-            customTitleContainer?.clipsToBounds = true
-            topItem?.titleView = customTitleContainer
-            
-            titleLabel = UILabel(frame: CGRect(x: 0, y: frame.height, width: customTitleContainer!.frame.width, height: frame.height))
+        if titleLabel == nil, let titleText = appearer?.appearingTitle {            
+            titleLabel = UILabel(frame: CGRect(x: 0, y: frame.height, width: 0, height: frame.height))
             titleLabel?.textAlignment = .center
             titleLabel?.text = titleText
             titleLabel?.textColor = tintColor ?? .white
             titleLabel?.numberOfLines = 0
             titleLabel?.minimumScaleFactor = 0.5
             titleLabel?.adjustsFontSizeToFitWidth = true
-            customTitleContainer!.addSubview(titleLabel!)
-            
-            customTitleContainer?.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[titleLabel]-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["titleLabel" : titleLabel!]))
-            customTitleContainer?.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[titleLabel]-|", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["titleLabel" : titleLabel!]))
+            topItem?.titleView = titleLabel
         }
     }
 }

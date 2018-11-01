@@ -19,7 +19,7 @@ open class MFNavigationBarAppearingContoller: UINavigationController {
         self.init(navigationBarClass: MFAppearingNavigationBar.self, toolbarClass: nil)
     }
     
-    convenience override init(rootViewController: UIViewController) {
+    public convenience override init(rootViewController: UIViewController) {
         self.init()
         
         appearingNavigationBar?.appearer = rootViewController as? MFNavigationBarAppearer

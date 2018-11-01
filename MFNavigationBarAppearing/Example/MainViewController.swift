@@ -18,6 +18,9 @@ class MainViewController: UIViewController {
         
         navigationController?.navigationBar.barTintColor = .purple
         navigationController?.navigationBar.tintColor = .white
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.cancel, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: nil, action: nil)
 //        (navigationController as? MFNavigationBarAppearingContoller)?.appearingNavigationBar?.titleAppearingAnimated = true
     }
 }
@@ -42,7 +45,7 @@ extension MainViewController: MFNavigationBarAppearer {
         return titleLabel.text
     }
     
-//    var appearingTitleEndOffsetAfterAppearingNavBar: CGFloat? {
-//        return titleLabel.frame.maxY
-//    }
+    var appearingTitleEndOffsetAfterAppearingNavBar: CGFloat? {
+        return titleLabel.frame.maxY
+    }
 }
