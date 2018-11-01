@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MFNavigationBarAppearer: class {
+open protocol MFNavigationBarAppearer: class {
     var appearingScrollView: UIScrollView? { get }
     var navigationBarStartAppearingOffset: CGFloat { get }
     var navigationBarEndAppearingOffset: CGFloat? { get }

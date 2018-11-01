@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MFAppearingNavigationBar: UINavigationBar {
+open class MFAppearingNavigationBar: UINavigationBar {
 
     public enum AppearingState {
         case appeared, disappeared, appearing

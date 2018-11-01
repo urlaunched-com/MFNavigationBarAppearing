@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "155"
             endingLineNumber = "155"
-            landmarkName = "updateTitleLabelAppearing(offsetY:)"
+            landmarkName = "set(alpha:)"
             landmarkType = "7">
             <Locations>
                <Location

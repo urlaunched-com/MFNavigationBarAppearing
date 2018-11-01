@@ -9,9 +9,9 @@
 import UIKit
 
 
-class MFNavigationBarAppearingContoller: UINavigationController {
+open class MFNavigationBarAppearingContoller: UINavigationController {
     
-    var appearingNavigationBar: MFAppearingNavigationBar? {
+    public var appearingNavigationBar: MFAppearingNavigationBar? {
         return navigationBar as? MFAppearingNavigationBar
     }
     
