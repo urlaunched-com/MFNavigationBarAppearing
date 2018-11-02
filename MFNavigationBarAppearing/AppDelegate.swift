@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        appearance.tintColor = .green
+        
         window?.rootViewController = MFNavigationBarAppearingContoller(rootViewController: MainViewController())
         return true
     }

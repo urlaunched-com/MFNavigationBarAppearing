@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         (navigationController as? MFNavigationBarAppearingContoller)?.appearingNavigationBar?.navigationBarColor = .purple
-        navigationController?.navigationBar.tintColor = .white
+//        navigationController?.navigationBar.tintColor = .white
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.cancel, target: nil, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: nil, action: nil)

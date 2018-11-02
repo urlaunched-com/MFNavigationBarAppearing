@@ -23,6 +23,12 @@ open class MFAppearingNavigationBar: UINavigationBar {
         }
     }
     
+    open override var tintColor: UIColor! {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
     open var titleAppearingInteractive = true
     open var titleAppearingAnimated = false {
         didSet {
@@ -59,6 +65,7 @@ private extension MFAppearingNavigationBar {
     func setupUI() {
         barBackgroundView = subviews.first
         barBackgroundView?.backgroundColor = navigationBarColor ?? .black
+        titleLabel?.textColor = tintColor ?? .white
         
         if let barBackgroundView = barBackgroundView {
             let backgroundView = barBackgroundView.viewWithTag(1) ?? {
