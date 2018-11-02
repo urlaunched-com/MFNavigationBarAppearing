@@ -11,10 +11,6 @@ import UIKit
 
 open class MFAppearingNavigationBar: UINavigationBar {
     
-    public enum AppearingState {
-        case appeared, disappeared, appearing
-    }
-    
     open private(set) var titleLabel: UILabel?
     open private(set) var appearingState: AppearingState = .disappeared
     open var navigationBarColor: UIColor? {
@@ -59,6 +55,43 @@ open class MFAppearingNavigationBar: UINavigationBar {
 }
 
 
+//MARK: - AppearingState
+public extension MFAppearingNavigationBar {
+    
+    enum AppearingState: RawRepresentable {
+        public typealias RawValue = CGFloat
+        
+        case appeared, disappeared, appearing
+        
+        public init(rawValue: CGFloat) {
+            switch rawValue {
+            case 0:
+                self = .disappeared
+                
+            case 1:
+                self = .appeared
+                
+            default:
+                self = .appearing
+            }
+        }
+        
+        public var rawValue: CGFloat {
+            switch self {
+            case .disappeared:
+                return 0
+                
+            case .appeared:
+                return 1
+                
+            default:
+                return 0.5
+            }
+        }
+    }
+}
+
+
 //MARK: - Configuretions
 private extension MFAppearingNavigationBar {
     
@@ -89,15 +122,11 @@ private extension MFAppearingNavigationBar {
         if titleLabel == nil, let titleText = appearer?.appearingTitle {
             let containerView = MFLabelView(frame: CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.height)))
             containerView.clipsToBounds = true
+            containerView.navigationBar = self
             
             titleLabel = containerView.label
-            titleLabel?.textAlignment = .center
             titleLabel?.text = titleText
             titleLabel?.textColor = tintColor ?? .white
-            titleLabel?.numberOfLines = 0
-            titleLabel?.minimumScaleFactor = 0.5
-            titleLabel?.adjustsFontSizeToFitWidth = true
-            
             topItem?.titleView = containerView
         }
     }
@@ -145,16 +174,7 @@ private extension MFAppearingNavigationBar {
         }
         
         barBackgroundView?.alpha = alpha
-        switch alpha {
-        case 0:
-            appearingState = .disappeared
-            
-        case 1:
-            appearingState = .appeared
-            
-        default:
-            appearingState = .appearing
-        }
+        appearingState = AppearingState(rawValue: alpha)
     }
     
     func updateTitleLabelAppearing(offsetY: CGFloat) {
