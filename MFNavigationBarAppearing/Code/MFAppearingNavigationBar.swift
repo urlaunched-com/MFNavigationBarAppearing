@@ -37,13 +37,22 @@ open class MFAppearingNavigationBar: UINavigationBar {
     
     private var barBackgroundView: UIView?
     private var observation: NSKeyValueObservation?
-        
+    private var titleColor: UIColor {
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        return [appearance.titleTextAttributes?[.foregroundColor] as? UIColor, tintColor, .white].compactMap { $0 }.first!
+    }
+    
+    private var titleFont: UIFont? {
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        return [appearance.titleTextAttributes?[.font] as? UIFont, titleLabel?.font].compactMap { $0 }.first
+    }
+    
     override open func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
         
         if topItem?.titleView == nil {
-            setupTitleContainer()
+            setupTitleLabel()
         }
         
         if let scrollView = appearer?.appearingScrollView {
@@ -98,7 +107,7 @@ private extension MFAppearingNavigationBar {
     func setupUI() {
         barBackgroundView = subviews.first
         barBackgroundView?.backgroundColor = navigationBarColor ?? .black
-        titleLabel?.textColor = tintColor ?? .white
+        titleLabel?.textColor = titleColor
         
         if let barBackgroundView = barBackgroundView {
             let backgroundView = barBackgroundView.viewWithTag(1) ?? {
@@ -106,7 +115,7 @@ private extension MFAppearingNavigationBar {
                 view.tag = 1
                 barBackgroundView.addSubview(view)
                 return view
-            }()
+                }()
             
             barBackgroundView.bringSubviewToFront(backgroundView)
             backgroundView.frame = barBackgroundView.bounds
@@ -118,7 +127,7 @@ private extension MFAppearingNavigationBar {
         set(alpha: 0)
     }
     
-    func setupTitleContainer() {
+    func setupTitleLabel() {
         if titleLabel == nil, let titleText = appearer?.appearingTitle {
             let containerView = MFLabelView(frame: CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.height)))
             containerView.clipsToBounds = true
@@ -126,7 +135,9 @@ private extension MFAppearingNavigationBar {
             
             titleLabel = containerView.label
             titleLabel?.text = titleText
-            titleLabel?.textColor = tintColor ?? .white
+            titleLabel?.textColor = titleColor
+            titleLabel?.font = titleFont
+
             topItem?.titleView = containerView
         }
     }
