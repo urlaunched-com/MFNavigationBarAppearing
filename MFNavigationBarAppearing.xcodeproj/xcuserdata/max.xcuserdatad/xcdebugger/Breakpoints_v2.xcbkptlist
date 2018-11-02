@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MFNavigationBarAppearing/Code/MFAppearingNavigationBar.swift"
-            timestampString = "562782907.065062"
+            timestampString = "562845360.487573"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "layoutSubviews()"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "setupUI()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

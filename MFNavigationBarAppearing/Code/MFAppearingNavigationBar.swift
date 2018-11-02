@@ -79,15 +79,19 @@ private extension MFAppearingNavigationBar {
     }
     
     func setupTitleContainer() {
-        if titleLabel == nil, let titleText = appearer?.appearingTitle {            
-            titleLabel = UILabel(frame: CGRect(x: 0, y: frame.height, width: 0, height: frame.height))
+        if titleLabel == nil, let titleText = appearer?.appearingTitle {
+            let containerView = MFLabelView(frame: CGRect(origin: .zero, size: CGSize(width: frame.width, height: frame.height)))
+            containerView.clipsToBounds = true
+            
+            titleLabel = containerView.label
             titleLabel?.textAlignment = .center
             titleLabel?.text = titleText
             titleLabel?.textColor = tintColor ?? .white
             titleLabel?.numberOfLines = 0
             titleLabel?.minimumScaleFactor = 0.5
             titleLabel?.adjustsFontSizeToFitWidth = true
-            topItem?.titleView = titleLabel
+            
+            topItem?.titleView = containerView
         }
     }
 }
