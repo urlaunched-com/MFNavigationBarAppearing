@@ -9,7 +9,7 @@
 
 ## Example
 
-Open and run the MFNavigationBarAppearing.xcodeproj in Xcode and run to see example
+Open and run the **MFNavigationBarAppearing.xcodeproj** in Xcode and run to see example
 
 ## Installation
 
@@ -27,12 +27,15 @@ Add MFNavigationBarAppearing/**Code** folder into your project.
 
 ## Usage
 
+First of all you need to setup **content insets** of your scroll view 
+
+![](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/content_insets.png)
+
+Next step is implement **MFNavigationBarAppearer** protocol in your **UIViewController**:
+
 ```swift
 import MFNavigationBarAppearing
-```
 
-You just need to implement **MFNavigationBarAppearer** protocol in your **UIViewController**:
-```swift
 //MARK: - MFNavigationBarAppearer
 extension UIViewController: MFNavigationBarAppearer {
     
@@ -63,10 +66,15 @@ extension UIViewController: MFNavigationBarAppearer {
 ```
 
 #### appearingScrollView
-It's **UIScrollView** which we will use to hande content offset for calculation appearing state of navigation bar.
+It's **UIScrollView** which we will use to hande content offset for calculating appearing state of navigation bar.
 
 #### navigationBarStartAppearingOffset
 The offset from the top of the screen, when you need to start navigation bar appearing.
 
-#### navigationBarEndAppearingOffset
+#### navigationBarEndAppearingOffset (Optional)
 
+The offset when navigation bar appearing should end. If the value is not provided, it will be calculated depending on the height of the navigation bar.
+
+#### appearingTitle (Optional)
+
+Title which will be appear interactively.
