@@ -16,7 +16,7 @@
 
 ## Example
 
-Open and run the **MFNavigationBarAppearing.xcodeproj** in Xcode and run to see example
+Open and run the **MFNavigationBarAppearing.xcodeproj** in Xcode to see example
 
 ## Installation
 
