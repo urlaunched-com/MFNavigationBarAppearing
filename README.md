@@ -100,10 +100,9 @@ The offset when navigation bar appearing should be finish. By default title will
 
 
 ## Contacts
-If you have any question regarding pod using or any improvements ideas, just contact us by email github@molfar.io
+If you have any questions regarding pod usage or any improvements ideas, just contact us by email github@molfar.io
 
-P.S. If you have any ideas but you don't have much time to implement it, describe your idea to us and we will help implement it.
-
+P.S. If you have ideas for this pod, but don't have time to implement it - write us your idea and we will do it.
 ## License
 
 	The MIT License (MIT)
