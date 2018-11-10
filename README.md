@@ -90,7 +90,7 @@ The offset from the top of the screen, when you need to start navigation bar app
 The offset when navigation bar appearing should end. If the value is not provided, it will be calculated depending on the height of the navigation bar.
 
 #### appearingTitle (Optional)
-Title which will be appear interactively.
+The title that will be appearing interactively.
 
 #### appearingTitleStartOffsetAfterAppearingNavBar (Optional)
 The offset (delay in pixels) befor starting title appearing. 0 by default.
