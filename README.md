@@ -1,6 +1,6 @@
 # MFNavigationBarAppearing
 [![Author](https://img.shields.io/badge/author-molar.io-orange.svg)](https://www.molfar.io)
-![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.6-blue.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 ![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0%2B-blue.svg)
 ![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
@@ -36,7 +36,15 @@ Add MFNavigationBarAppearing/**Code** folder into your project.
 
 First of all you need to setup **content insets** of your scroll view 
 
-![](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/content_insets.png)
+![Content insets](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/content_insets.png)
+
+### Important 
+You need to use `MFNavigationBarAppearingController` instead UINavigationContoller for your presenting your UIViewController which should implement `MFNavigationBarAppearer` protocol
+
+```swift
+let navigationController = MFNavigationBarAppearingController(rootViewController: UIViewController<MFNavigationBarAppearer>())
+present(navigationController, animated: true, completion: nil)
+```
 
 Next step is implement **MFNavigationBarAppearer** protocol in your **UIViewController**:
 
