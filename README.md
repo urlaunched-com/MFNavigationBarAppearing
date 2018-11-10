@@ -81,7 +81,7 @@ extension UIViewController: MFNavigationBarAppearer {
 ```
 
 #### appearingScrollView
-It's **UIScrollView** which we will use to handle content offset for calculating appearing state of navigation bar.
+It's **UIScrollView** which we will use to handle content offset for calculating appearing state of the navigation bar.
 
 #### navigationBarStartAppearingOffset
 The offset from the top of the screen, when you need to start navigation bar appearing.
