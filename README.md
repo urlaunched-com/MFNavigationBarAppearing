@@ -39,8 +39,7 @@ First of all you need to setup **content insets** of your scroll view
 ![Content insets](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/content_insets.png)
 
 ### Important 
-You need to use **`MFNavigationBarAppearingController`** instead of UINavigationContoller for presenting your UIViewController.
-UIViewController should implement **`MFNavigationBarAppearer`** protocol
+You need to use **`MFNavigationBarAppearingController`** instead of UINavigationContoller for presenting your UIViewController. This UIViewController should implement **`MFNavigationBarAppearer`** protocol
 
 ```swift
 let navigationController = MFNavigationBarAppearingController(rootViewController: UIViewController<MFNavigationBarAppearer>())
@@ -82,7 +81,7 @@ extension UIViewController: MFNavigationBarAppearer {
 ```
 
 #### appearingScrollView
-It's **UIScrollView** which we will use to hande content offset for calculating appearing state of navigation bar.
+It's **UIScrollView** which we will use to handle content offset for calculating appearing state of navigation bar.
 
 #### navigationBarStartAppearingOffset
 The offset from the top of the screen, when you need to start navigation bar appearing.
