@@ -72,9 +72,13 @@ It's **UIScrollView** which we will use to hande content offset for calculating 
 The offset from the top of the screen, when you need to start navigation bar appearing.
 
 #### navigationBarEndAppearingOffset (Optional)
-
 The offset when navigation bar appearing should end. If the value is not provided, it will be calculated depending on the height of the navigation bar.
 
 #### appearingTitle (Optional)
-
 Title which will be appear interactively.
+
+#### appearingTitleStartOffsetAfterAppearingNavBar (Optional)
+The offset (delay in pixels) befor starting title appearing. 0 by default.
+
+#### appearingTitleEndOffsetAfterAppearingNavBar (Optional)
+The offset when navigation bar appearing should be finish. By default title will be appeared together with navigation bar.
