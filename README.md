@@ -39,7 +39,7 @@ First of all you need to setup **content insets** of your scroll view
 ![Content insets](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/content_insets.png)
 
 ### Important 
-You need to use **`MFNavigationBarAppearingController`** instead UINavigationContoller for presenting your UIViewController which should implement **`MFNavigationBarAppearer`** protocol
+You need to use **`MFNavigationBarAppearingController`** instead of UINavigationContoller for presenting your UIViewController which should implement **`MFNavigationBarAppearer`** protocol
 
 ```swift
 let navigationController = MFNavigationBarAppearingController(rootViewController: UIViewController<MFNavigationBarAppearer>())
