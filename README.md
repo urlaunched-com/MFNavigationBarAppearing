@@ -3,7 +3,7 @@
 ![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 ![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0%2B-blue.svg)
-![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
+![Swift 4.2+](https://img.shields.io/badge/Swift-4.2%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 ![Contact](https://img.shields.io/badge/contact-github%40molfar.io-orange.svg)
 
