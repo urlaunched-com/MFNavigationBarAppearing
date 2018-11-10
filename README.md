@@ -1,4 +1,11 @@
 # MFNavigationBarAppearing
+[![Author](https://img.shields.io/badge/author-molar.io-orange.svg)](https://www.molfar.io)
+![Version](https://img.shields.io/badge/version-1.0.5-blue.svg)
+![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
+![Xcode 10.0+](https://img.shields.io/badge/Xcode-10.0%2B-blue.svg)
+![Swift 4.0+](https://img.shields.io/badge/Swift-4.0%2B-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-black.svg)
+![Contact](https://img.shields.io/badge/contact-github%40molfar.io-orange.svg)
 
 ![](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/example_300.gif)
 
@@ -84,7 +91,12 @@ The offset (delay in pixels) befor starting title appearing. 0 by default.
 The offset when navigation bar appearing should be finish. By default title will be appeared together with navigation bar.
 
 
-### License
+## Contacts
+If you have any question regarding pod using or any improvements ideas, just contact us by email github@molfar.io
+
+P.S. If you have any ideas but you don't have much time to implement it, describe your idea to us and we will help implement it.
+
+## License
 
 	The MIT License (MIT)
 
