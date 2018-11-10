@@ -1,5 +1,5 @@
 //
-//  MFNavigationBarAppearingContoller.swift
+//  MFNavigationBarAppearingController.swift
 //  MFNavigationBarAppearing
 //
 //  Created by Max on 10/31/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class MFNavigationBarAppearingContoller: UINavigationController {
+open class MFNavigationBarAppearingController: UINavigationController {
     
     public var appearingNavigationBar: MFAppearingNavigationBar? {
         return navigationBar as? MFAppearingNavigationBar
