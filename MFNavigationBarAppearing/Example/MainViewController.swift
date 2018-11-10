@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        (navigationController as? MFNavigationBarAppearingContoller)?.appearingNavigationBar?.navigationBarColor = .purple
+        (navigationController as? MFNavigationBarAppearingController)?.appearingNavigationBar?.navigationBarColor = .purple
 //        navigationController?.navigationBar.tintColor = .white
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "back_icon_place"), style: .plain, target: nil, action: nil)

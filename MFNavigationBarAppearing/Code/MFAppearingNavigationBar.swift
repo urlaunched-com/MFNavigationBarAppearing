@@ -38,12 +38,12 @@ open class MFAppearingNavigationBar: UINavigationBar {
     private var barBackgroundView: UIView?
     private var observation: NSKeyValueObservation?
     private var titleColor: UIColor {
-        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingController.self])
         return [appearance.titleTextAttributes?[.foregroundColor] as? UIColor, tintColor, .white].compactMap { $0 }.first!
     }
     
     private var titleFont: UIFont? {
-        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingController.self])
         return [appearance.titleTextAttributes?[.font] as? UIFont, titleLabel?.font].compactMap { $0 }.first
     }
     

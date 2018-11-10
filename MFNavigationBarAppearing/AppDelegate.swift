@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingContoller.self])
+        let appearance = MFAppearingNavigationBar.appearance(whenContainedInInstancesOf:[MFNavigationBarAppearingController.self])
         appearance.tintColor = .yellow
         appearance.titleTextAttributes = [.font : UIFont.systemFont(ofSize: 36), .foregroundColor : UIColor.red]
         
-        window?.rootViewController = MFNavigationBarAppearingContoller(rootViewController: MainViewController())
+        window?.rootViewController = MFNavigationBarAppearingController(rootViewController: MainViewController())
         return true
     }
 }
