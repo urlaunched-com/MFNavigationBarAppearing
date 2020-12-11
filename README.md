@@ -1,11 +1,10 @@
 # MFNavigationBarAppearing
-[![Author](https://img.shields.io/badge/author-molfar.io-orange.svg)](https://www.molfar.io)
+[![Author](https://img.shields.io/badge/author-molfar.io-orange.svg)](http://urlaunched.com/)
 ![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 ![Xcode 10.0](https://img.shields.io/badge/Xcode-10.0-blue.svg)
 ![Swift 4.2](https://img.shields.io/badge/Swift-4.2-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
-![Contact](https://img.shields.io/badge/contact-github%40molfar.io-orange.svg)
 
 ![](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/example_300.gif)
 
@@ -107,7 +106,7 @@ P.S. If you have ideas for this pod, but don't have time to implement it - write
 
 	The MIT License (MIT)
 
-	Copyright © 2018 Molfar.io
+	Copyright © 2018 Max Kuznetsov
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
