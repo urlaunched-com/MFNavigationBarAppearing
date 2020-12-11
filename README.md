@@ -1,5 +1,5 @@
 # MFNavigationBarAppearing
-[![Author](https://img.shields.io/badge/author-molfar.io-orange.svg)](http://urlaunched.com/)
+[![Author](https://img.shields.io/badge/author-Max_Kuznetsov-orange.svg)](http://urlaunched.com/)
 ![Version](https://img.shields.io/badge/version-1.0.7-blue.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0%2B-blue.svg)
 ![Xcode 10.0](https://img.shields.io/badge/Xcode-10.0-blue.svg)
