@@ -8,6 +8,8 @@
 
 ![](https://github.com/Molfar-io/MFNavigationBarAppearing/blob/master/example_300.gif)
 
+"the app is developed by [You are launched](https://www.urlaunched.com)"
+
 ## Requirements
 * Xcode 10+
 * iOS 9.0+
